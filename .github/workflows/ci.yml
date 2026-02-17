@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          repository: github.com/andyu26/pulse
+          repository: andyu26/pulse
           ref: ${{ github.event.inputs.tag }}
 
       - name: Extract tags
