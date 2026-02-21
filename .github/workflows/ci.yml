@@ -38,7 +38,10 @@ jobs:
         with:
           context: .
           push: true
+          provenance: false
           platforms: linux/amd64
+          build-args : |
+            BUILD_AGENT=0
           tags: |
             ghcr.io/andyu26/pulse:${{ steps.vars.outputs.VERSION }}
             ghcr.io/andyu26/pulse:latest
